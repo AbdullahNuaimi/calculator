@@ -1,0 +1,109 @@
+@import url('http://fonts.cdnfonts.com/css/ds-digital');
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  /* font-family: 'DS-Digital', sans-serif; */
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  width: 500px;
+  height: 550px;
+  margin: 30px;
+}
+
+.screen {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  background-color: #80ff0080;
+  border: 2px solid #918f8f;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: 'DS-Digital', sans-serif;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+  background-color: #8080801f;
+  border: 2px solid #918f8f;
+  border-radius: 15px;
+  box-shadow: -5px 5px 10px black;
+}
+
+.button {
+  margin: 5px;
+  width: 20%;
+  height: 20%;
+  background-color: #cccccc;
+  /* font-family: 'DS-Digital', sans-serif; */
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #929292;
+
+}
+
+.button:active,
+.ctrl-button:active,
+#eq:active,
+.rst-button:active {
+  transform: scale(0.9);
+}
+
+.rst-button {
+  background-color: rgb(182, 0, 0);
+  color: white;
+  font-family: 'DS-Digital', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.rst-button:hover,
+.rst-button:focus {
+  background-color: rgb(136, 0, 0);
+
+}
+
+.ctrl-button {
+  background-color: #919191;
+  cursor: pointer;
+}
+
+.ctrl-button:hover,
+.ctrl-button:focus {
+  background-color: #686868;
+}
+
+#eq {
+  background-color: rgb(0, 89, 255);
+  cursor: pointer;
+}
+
+#eq:hover,
+#eq:focus {
+  background-color: rgb(1, 59, 168);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
